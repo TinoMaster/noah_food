@@ -1,4 +1,4 @@
-import { Banner_Image } from "@/components/Banner_Image";
+import { Banner_Image } from "@/components/Z-Banner_Image/Banner_Image";
 import { img_Services } from "@/utils/images";
 import React from "react";
 

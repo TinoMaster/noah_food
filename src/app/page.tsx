@@ -1,8 +1,8 @@
 import { img_parrilla } from "@/utils/images";
-import { Banner_Image } from "@/components/Banner_Image";
+import { Banner_Image } from "@/components/Z-Banner_Image/Banner_Image";
 
-const tittle = "Probando esta talla";
-const bigTittle = "Feels Like Home, Tastes Like a Paaradise";
+const tittle = "Gusto Autentico Italiano";
+const bigTittle = "Sembra Casa, Sapore di Paradiso";
 
 export default function Home() {
   return (

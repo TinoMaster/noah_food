@@ -3,7 +3,7 @@ import { NavbarLink } from "./NabvarLink";
 
 const links: Array<TypeLinkMenu> = [
   {
-    name: "Home",
+    name: "Casa",
     href: "/",
     hash: "",
   },
@@ -13,17 +13,17 @@ const links: Array<TypeLinkMenu> = [
     hash: "menu",
   },
   {
-    name: "Services",
+    name: "Servizi",
     href: "/services",
     hash: "services",
   },
   {
-    name: "History",
+    name: "Storia",
     href: "/history",
     hash: "history",
   },
   {
-    name: "Contacts",
+    name: "Contatti",
     href: "/contacts",
     hash: "contacts",
   },
