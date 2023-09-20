@@ -13,9 +13,14 @@ const links: Array<TypeLinkMenu> = [
     hash: "menu",
   },
   {
-    name: "Photos",
-    href: "/photos",
-    hash: "photos",
+    name: "Services",
+    href: "/services",
+    hash: "services",
+  },
+  {
+    name: "History",
+    href: "/history",
+    hash: "history",
   },
   {
     name: "Contacts",

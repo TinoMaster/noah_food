@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="bg-slate-100 font-body">
+    <html suppressHydrationWarning={true} lang="en" className="bg-slate-100 font-body">
       <body className={`${inter.variable} ${dancing_script.variable}`}>
         <Nabvar />
         {children}
