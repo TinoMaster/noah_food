@@ -1,5 +1,9 @@
 import { Banner_Image } from "@/components/Banner_Image";
-import { img_Menu } from "@/utils/images";
+import { img_Services } from "@/utils/images";
+import React from "react";
+
+const tittle = "Probando esta talla";
+const bigTittle = "Feels Like Home, Tastes Like a Paaradise";
 
 export default function LayoutServices({
   children,
@@ -9,7 +13,11 @@ export default function LayoutServices({
   return (
     <>
       <header>
-        <Banner_Image image={img_Menu} />
+        <Banner_Image
+          image={img_Services}
+          tittle={tittle}
+          bigTittle={bigTittle}
+        />
       </header>
       {children}
     </>

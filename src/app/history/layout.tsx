@@ -1,11 +1,11 @@
 import { Banner_Image } from "@/components/Banner_Image";
-import { img_Menu } from "@/utils/images";
+import { img_History } from "@/utils/images";
 import React from "react";
 
 const tittle = "Probando esta talla";
 const bigTittle = "Feels Like Home, Tastes Like a Paaradise";
 
-export default function LayoutMenu({
+export default function LayoutHistory({
   children,
 }: {
   children: React.ReactNode;
@@ -13,7 +13,11 @@ export default function LayoutMenu({
   return (
     <>
       <header>
-        <Banner_Image image={img_Menu} tittle={tittle} bigTittle={bigTittle} />
+        <Banner_Image
+          image={img_History}
+          tittle={tittle}
+          bigTittle={bigTittle}
+        />
       </header>
       {children}
     </>
