@@ -8,15 +8,23 @@ const bigTittle = "Sembra Casa, Sapore di Paradiso";
 export default function Home() {
   return (
     <>
-      <header>
+      <header className="min-h-[100vh] flex flex-col bg-slate-100">
         <Banner_Image
           image={img_parrilla}
           tittle={tittle}
           bigTittle={bigTittle}
         />
+        <section className="section_header">
+          <Wy_US />
+        </section>
       </header>
-      <main className="main">
-        <Wy_US />
+      <main className="container">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sint,
+          eos et numquam dignissimos vitae voluptatibus voluptatem, quia
+          consequatur accusantium repellendus natus, quaerat deleniti aliquid.
+          Nihil ut fugit odio quibusdam!
+        </p>
       </main>
     </>
   );

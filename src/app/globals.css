@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.main {
-  @apply rounded-tr-[50px] z-10 -translate-y-9 bg-slate-50 w-full h-[1000px] overflow-hidden p-4;
-}
-
 .container {
   @apply max-w-720p m-auto w-11/12;
+}
+
+.section_header {
+  @apply flex justify-center items-center bg-slate-100 -translate-y-10 rounded-tr-[50px] py-10 md:py-20;
 }
