@@ -12,12 +12,12 @@ export const Text_Banner = ({
 }) => {
   return (
     <div className="absolute flex justify-center items-center w-full h-full bg-gradient-to-t from-black/40 to-black/50">
-      <div className="flex flex-col gap-2 text-white w-11/12 md:w-1/3 h-5/6 justify-center">
+      <div className="flex flex-col text-white w-11/12 md:w-1/3 h-5/6 justify-center">
         <motion.p
           variants={bannerTittle}
           initial="initial"
           animate="animate"
-          className="text-slate-300 text-xs md:text-xl font-display"
+          className="text-slate-300 text-xs md:text-xl"
         >
           {tittle}
         </motion.p>
@@ -25,11 +25,11 @@ export const Text_Banner = ({
           variants={bannerBigTittle}
           initial="initial"
           animate="animate"
-          className="text-3xl md:text-6xl font-display"
+          className="text-3xl md:text-6xl"
         >
           {bigTittle}
         </motion.p>
-        <div className="">
+        <div className=" py-4">
           <motion.button
             variants={bannerTittle}
             initial="initial"

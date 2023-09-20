@@ -1,9 +1,13 @@
 import { Nabvar } from "@/components/app/Nabvar";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter, Dancing_Script } from "next/font/google";
+import { Inter, Dancing_Script, Playfair_Display } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"], variable: "--body-font" });
+const playFair_display = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--main-font",
+});
 const dancing_script = Dancing_Script({
   subsets: ["latin"],
   variable: "--display-font",
@@ -20,8 +24,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning={true} lang="en" className="bg-slate-100 font-body">
-      <body className={`${inter.variable} ${dancing_script.variable}`}>
+    <html
+      suppressHydrationWarning={true}
+      lang="en"
+      className="bg-slate-100 text-slate-800 font-body"
+    >
+      <body
+        className={`${inter.variable} ${dancing_script.variable} ${playFair_display.variable}`}
+      >
         <Nabvar />
         {children}
       </body>

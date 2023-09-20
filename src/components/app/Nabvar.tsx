@@ -34,7 +34,7 @@ export const Nabvar = () => {
     <div className="flex justify-center items-center absolute text-white z-10 w-full h-32">
       <div className="container flex justify-between items-center">
         {/* Logo */}
-        <div className="text-2xl">Noah</div>
+        <div className="text-3xl">Noah</div>
         {/* Links */}
         <div className="flex gap-3 text-lg">
           {links.map((link) => (

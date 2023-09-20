@@ -13,7 +13,7 @@ export const NavbarLink = ({ link }: { link: TypeLinkMenu }) => {
   return (
     <Link
       href={`${href}`}
-      className={`${currentHash === hash ? "" : ""} relative`}
+      className={`${currentHash === hash ? "" : ""} relative text-xl`}
     >
       {currentHash === hash ? (
         <motion.div
