@@ -1,5 +1,6 @@
 import { TypeLinkMenu } from "@/types/types";
 import { NavbarLink } from "./NabvarLink";
+import { Btn_MenuMovil } from "./Btn_MenuMovil";
 
 const links: Array<TypeLinkMenu> = [
   {
@@ -35,8 +36,12 @@ export const Nabvar = () => {
       <div className="container flex justify-between items-center">
         {/* Logo */}
         <div className="text-3xl">Noah</div>
+        {/* btn open menu */}
+        <div className="lg:hidden">
+          <Btn_MenuMovil />
+        </div>
         {/* Links */}
-        <div className="flex gap-3 text-lg">
+        <div className="gap-3 text-lg hidden lg:flex">
           {links.map((link) => (
             <NavbarLink key={link.name} link={link} />
           ))}

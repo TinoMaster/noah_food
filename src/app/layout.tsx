@@ -27,7 +27,7 @@ export default function RootLayout({
     <html
       suppressHydrationWarning={true}
       lang="en"
-      className="bg-slate-100 text-slate-800 font-body"
+      className="bg-slate-50 text-slate-800 font-body"
     >
       <body
         className={`${inter.variable} ${dancing_script.variable} ${playFair_display.variable}`}

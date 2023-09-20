@@ -8,7 +8,7 @@ const bigTittle = "Sembra Casa, Sapore di Paradiso";
 export default function Home() {
   return (
     <>
-      <header className="min-h-[100vh] flex flex-col bg-slate-100">
+      <header className="min-h-[100vh] flex flex-col bg-slate-50">
         <Banner_Image
           image={img_parrilla}
           tittle={tittle}
