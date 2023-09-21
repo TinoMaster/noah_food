@@ -12,7 +12,7 @@ export const Text_Banner = ({
 }) => {
   return (
     <div className="absolute flex justify-center items-center w-full h-full bg-gradient-to-t from-black/40 to-black/50">
-      <div className="flex flex-col text-white w-11/12 lg:w-1/3 h-5/6 justify-center items-center lg:items-start">
+      <div className="flex flex-col text-white w-11/12 lg:w-1/3 h-5/6 justify-center items-center">
         <motion.p
           variants={bannerTittle}
           initial="initial"
@@ -25,7 +25,7 @@ export const Text_Banner = ({
           variants={bannerBigTittle}
           initial="initial"
           animate="animate"
-          className="text-3xl md:text-5xl italic text-center lg:text-start"
+          className="text-3xl md:text-5xl italic text-center"
         >
           {bigTittle}
         </motion.p>
@@ -34,7 +34,7 @@ export const Text_Banner = ({
             variants={bannerTittle}
             initial="initial"
             animate="animate"
-            className="border border-secondary bg-primary/70 italic shadow-md shadow-black/40 text-lg p-2 rounded"
+            className="border border-secondary bg-primary/70 hover:bg-secondary/50 hover:shadow-black/60 transition-colors italic shadow-md shadow-black/40 text-lg p-2 rounded"
           >
             Ver Menu
           </motion.button>

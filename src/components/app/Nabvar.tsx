@@ -8,7 +8,7 @@ export const Nabvar = () => {
     <div className="flex justify-center items-center absolute text-white z-10 w-full h-32">
       <div className="container flex justify-between items-center">
         {/* Logo */}
-        <div className="flex flex-col items-center -translate-y-1">
+        <div className="flex flex-col items-center -translate-y-1 lg:ml-28">
           <GiHotMeal className="text-xl"/>
           <h1 className="text-3xl">Noah</h1>
         </div>
