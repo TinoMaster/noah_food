@@ -1,7 +1,6 @@
 import { Nabvar } from "@/components/app/Nabvar";
 import "./globals.css";
 import type { Metadata } from "next";
-import { inter, dancing_script, playFair_display } from "@/fonts/index";
 import { AppProvider } from "@/context/appContext";
 import { Nabvar_Movil } from "@/components/app/Nabvar_Movil";
 
@@ -19,13 +18,10 @@ export default function RootLayout({
     <html
       suppressHydrationWarning={true}
       lang="en"
-      className="bg-slate-50 text-slate-800 font-body"
+      className="bg-slate-50 text-slate-800 font-lora"
     >
       <AppProvider>
-        <body
-          className={`${inter.variable} ${dancing_script.variable} ${playFair_display.variable}`}
-        >
-          {/* Modal menu Movil */}
+        <body className="gradient">
           <Nabvar_Movil />
           <Nabvar />
           {children}

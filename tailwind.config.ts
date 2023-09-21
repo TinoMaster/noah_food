@@ -8,9 +8,7 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      body: "var(--body-font)",
-      display: "var(--display-font)",
-      main: "var(--main-font)",
+      lora: ["Lora", "serif"],
     },
     extend: {
       backgroundImage: {
