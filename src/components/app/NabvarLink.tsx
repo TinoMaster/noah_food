@@ -4,16 +4,21 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { TypeLinkMenu } from "@/types/types";
+import useApp from "@/context/appContext";
 
 export const NavbarLink = ({ link }: { link: TypeLinkMenu }) => {
   const { name, href, hash } = link;
   const pathname = usePathname();
   const currentHash = pathname.slice(1);
+  const { setMenuIsOpen } = useApp();
 
   return (
     <Link
       href={`${href}`}
-      className={`${currentHash === hash ? "" : ""} relative text-xl`}
+      onClick={() => setTimeout(() => setMenuIsOpen(false), 100)}
+      className={`${
+        currentHash === hash ? "" : ""
+      } relative text-xl inline-block`}
     >
       {currentHash === hash ? (
         <motion.div

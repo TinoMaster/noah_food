@@ -1,17 +1,9 @@
 import { Nabvar } from "@/components/app/Nabvar";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter, Dancing_Script, Playfair_Display } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"], variable: "--body-font" });
-const playFair_display = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--main-font",
-});
-const dancing_script = Dancing_Script({
-  subsets: ["latin"],
-  variable: "--display-font",
-});
+import { inter, dancing_script, playFair_display } from "@/fonts/index";
+import { AppProvider } from "@/context/appContext";
+import { Nabvar_Movil } from "@/components/app/Nabvar_Movil";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -29,12 +21,16 @@ export default function RootLayout({
       lang="en"
       className="bg-slate-50 text-slate-800 font-body"
     >
-      <body
-        className={`${inter.variable} ${dancing_script.variable} ${playFair_display.variable}`}
-      >
-        <Nabvar />
-        {children}
-      </body>
+      <AppProvider>
+        <body
+          className={`${inter.variable} ${dancing_script.variable} ${playFair_display.variable}`}
+        >
+          {/* Modal menu Movil */}
+          <Nabvar_Movil />
+          <Nabvar />
+          {children}
+        </body>
+      </AppProvider>
     </html>
   );
 }

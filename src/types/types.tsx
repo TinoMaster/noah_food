@@ -3,3 +3,5 @@ export type TypeLinkMenu = {
   href: string;
   hash: string;
 };
+
+export type PropsSeachParam = Record<string, string> | null | undefined;

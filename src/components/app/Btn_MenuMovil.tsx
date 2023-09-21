@@ -1,19 +1,17 @@
 "use client";
-import React, { useState } from "react";
+import useApp from "@/context/appContext";
 import { CgMenuHotdog } from "react-icons/cg";
 
 /* //Todo: ver como puedo lograr esto */
 export const Btn_MenuMovil = () => {
-  const [openMenu, setopenMenu] = useState(false);
-  const handlerOpenMenu = () => {
-    setopenMenu((prev) => !prev);
-  };
+  const { setMenuIsOpen } = useApp();
+
   return (
-    <div onClick={handlerOpenMenu} className="text-4xl p-2 border rounded-full">
-      {openMenu ? (
-        <div className="w-full h-full bg-white absolute"></div>
-      ) : null}
+    <button
+      onClick={() => setMenuIsOpen(true)}
+      className="text-4xl block p-1 border rounded-full"
+    >
       <CgMenuHotdog />
-    </div>
+    </button>
   );
 };
