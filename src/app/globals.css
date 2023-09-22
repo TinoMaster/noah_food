@@ -5,10 +5,10 @@
 @tailwind utilities;
 
 .gradient {
-  /* height: fit-content;
+  height: fit-content;
   z-index: 3;
   width: 100%;
-  max-width: 640px; */
+  /* max-width: 640px; */
   background-image: radial-gradient(
       at 27% 37%,
       hsla(215, 98%, 61%, 1) 0px,
@@ -24,9 +24,9 @@
   content: "";
   width: 100%;
   height: 100%;
-  filter: blur(0px) saturate(150%);
-  /* top: 80px; */
-  opacity: 0.95;
+  filter: blur(100px) saturate(150%);
+  top: 80px;
+  opacity: 0.15;
 }
 
 .container {
@@ -34,5 +34,13 @@
 }
 
 .section_header {
-  @apply flex justify-center items-center bg-slate-50 -translate-y-10 rounded-tr-[50px] py-10;
+  @apply flex justify-center items-center -translate-y-10 rounded-tr-[50px] py-10;
+}
+
+.lightBackground {
+  @apply bg-gradient-to-r from-slate-50 via-orange-50 to-slate-50;
+}
+
+.darkBackground {
+  @apply text-white bg-gradient-to-r from-primary via-primaryLight to-primary;
 }

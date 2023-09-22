@@ -18,10 +18,10 @@ export default function RootLayout({
     <html
       suppressHydrationWarning={true}
       lang="en"
-      className="bg-slate-50 text-slate-800 font-lora"
+      className="text-slate-800 font-lora"
     >
       <AppProvider>
-        <body className="gradient">
+        <body className="darkBackground">
           <Nabvar_Movil />
           <Nabvar />
           {children}

@@ -1,11 +1,11 @@
 import React from "react";
 import { RiMapPinTimeLine } from "react-icons/ri";
-import { PiStarThin } from "react-icons/pi";
+import { GiStaryu } from "react-icons/gi";
 
 export const Wy_US = () => {
   return (
     <div className="container flex flex-col justify-center items-center">
-      <h2 className="text-3xl md:text-4xl text-black italic">
+      <h2 className="text-3xl md:text-4xl italic bg-gradient-to-r from-primaryLight via-orange-500 to-secondary bg-clip-text text-transparent">
         Scopri La Nostra Essenza
       </h2>
       <p className="text-secondary text-3xl">★★★★★</p>
@@ -13,7 +13,7 @@ export const Wy_US = () => {
         {/* Experience */}
         <div className="flex flex-col lg:flex-row w-1/2 items-center border-r-2 gap-3 lg:gap-0">
           <div className="text-5xl shadow-md flex justify-center items-center rounded-full">
-            <RiMapPinTimeLine className="w-20 h-20 lg:w-28 lg:h-28 p-5 rounded-full bg-white" />
+            <RiMapPinTimeLine className="w-20 h-20 lg:w-28 lg:h-28 p-5 rounded-full bg-primary text-secondary" />
           </div>
           <div className="text-center">
             <h3 className="italic font-bold text-secondary">Experience</h3>
@@ -35,7 +35,7 @@ export const Wy_US = () => {
             </p>
           </div>
           <div className="text-5xl shadow-md flex justify-center items-center rounded-full">
-            <PiStarThin className="w-20 h-20 lg:w-28 lg:h-28 p-5 rounded-full bg-white" />
+            <GiStaryu className="w-20 h-20 lg:w-28 lg:h-28 p-5 rounded-full bg-secondary text-primary" />
           </div>
         </div>
       </div>

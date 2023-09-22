@@ -1,6 +1,9 @@
 import { img_parrilla } from "@/utils/images";
 import { Banner_Image } from "@/components/Z-Banner_Image/Banner_Image";
 import { Wy_US } from "@/components/home/wy_us";
+import Image from "next/image";
+import Link from "next/link";
+import { AboutUs } from "@/components/home/About_us";
 
 const tittle = "Gusto Autentico Italiano";
 const bigTittle = "Sembra Casa, Sapore di Paradiso";
@@ -8,23 +11,19 @@ const bigTittle = "Sembra Casa, Sapore di Paradiso";
 export default function Home() {
   return (
     <>
-      <header className="min-h-[100vh] flex flex-col bg-slate-50">
+      <header className="min-h-[100vh] flex flex-col">
         <Banner_Image
           image={img_parrilla}
           tittle={tittle}
           bigTittle={bigTittle}
         />
-        <section className="section_header">
+        <section className="section_header darkBackground">
           <Wy_US />
         </section>
       </header>
-      <main className="container">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sint,
-          eos et numquam dignissimos vitae voluptatibus voluptatem, quia
-          consequatur accusantium repellendus natus, quaerat deleniti aliquid.
-          Nihil ut fugit odio quibusdam!
-        </p>
+      <main className="h-[1000px]">
+        {/* La nostra Storia */}
+        <AboutUs />
       </main>
     </>
   );
