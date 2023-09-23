@@ -38,9 +38,6 @@ export const openMenuMovil = {
 export const image1historyHome = {
   initial: {
     opacity: 0,
-    transition: {
-      duration: 0.8,
-    },
   },
   animate: {
     opacity: 1,
