@@ -34,3 +34,24 @@ export const openMenuMovil = {
     opacity: 1,
   },
 };
+
+export const image1historyHome = {
+  initial: {
+    opacity: 0,
+    transition: {
+      duration: 0.8,
+    },
+  },
+  animate: {
+    opacity: 1,
+  },
+};
+
+export const image2historyHome = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+  },
+};
