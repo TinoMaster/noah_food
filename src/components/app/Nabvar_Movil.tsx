@@ -1,6 +1,4 @@
 "use client";
-import { motion } from "framer-motion";
-import { openMenuMovil } from "@/animations/framers";
 import { links } from "@/utils/links_menu";
 import { NavbarLink } from "./NabvarLink";
 import { AiOutlineClose } from "react-icons/ai";
@@ -10,10 +8,7 @@ export const Nabvar_Movil = () => {
   const { menuIsOpen, setMenuIsOpen } = useApp();
 
   return (
-    <motion.div
-      variants={openMenuMovil}
-      initial="initial"
-      animate="animate"
+    <div
       className={`fixed transition-transform ${
         menuIsOpen
           ? "flex flex-col translate-x-0 w-screen bg-gradient-to-tr from-orange-50 via-white to-orange-50 h-screen z-20"
@@ -31,6 +26,6 @@ export const Nabvar_Movil = () => {
           <NavbarLink key={link.name} link={link} />
         ))}
       </div>
-    </motion.div>
+    </div>
   );
 };

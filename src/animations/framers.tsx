@@ -26,15 +26,6 @@ export const bannerBigTittle = {
   },
 };
 
-export const openMenuMovil = {
-  initial: {
-    opacity: 0,
-  },
-  animate: {
-    opacity: 1,
-  },
-};
-
 export const image1historyHome = {
   initial: {
     opacity: 0,
