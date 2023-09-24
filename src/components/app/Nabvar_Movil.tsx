@@ -14,10 +14,10 @@ export const Nabvar_Movil = () => {
       variants={openMenuMovil}
       initial="initial"
       animate="animate"
-      className={`${
+      className={`fixed transition-transform ${
         menuIsOpen
-          ? "fixed flex flex-col w-screen bg-slate-50 h-screen z-20"
-          : "hidden"
+          ? "flex flex-col translate-x-0 w-screen bg-gradient-to-tr from-orange-50 via-white to-orange-50 h-screen z-20"
+          : "-translate-x-full"
       } `}
     >
       <button
@@ -26,7 +26,7 @@ export const Nabvar_Movil = () => {
       >
         <AiOutlineClose />
       </button>
-      <div className="flex flex-col justify-center items-center h-full gap-5">
+      <div className="flex flex-col grow justify-center items-center h-full gap-5">
         {links?.map((link) => (
           <NavbarLink key={link.name} link={link} />
         ))}

@@ -14,7 +14,7 @@ export const ImageBlock = () => {
         initial="initial"
         whileInView="animate"
         transition={{ duration: 1.8 }}
-        className="w-1/2 flex flex-col gap-2 justify-center items-end translate-y-6 -rotate-12"
+        className="w-1/2 flex flex-col gap-2 justify-center items-end" /* -rotate-12 */
       >
         <div className="w-[120px] h-[150px] lg:w-[200px] lg:h-[250px] p-1 bg-gradient-to-tr from-secondary to-black shadow-lg shadow-black/40 rounded-md">
           <Image
@@ -30,7 +30,7 @@ export const ImageBlock = () => {
         initial="initial"
         whileInView="animate"
         transition={{ duration: 1.8 }}
-        className="w-1/2 flex flex-col gap-2 justify-center items-start rotate-12"
+        className="w-1/2 flex flex-col gap-2 justify-center items-start "
       >
         <div className="w-[120px] h-[150px] lg:w-[200px] lg:h-[250px] p-1 bg-gradient-to-tr from-black to-secondary shadow-lg shadow-black/40 rounded-md">
           <Image

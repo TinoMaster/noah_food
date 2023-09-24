@@ -18,7 +18,7 @@ export const NavbarLink = ({ link }: { link: TypeLinkMenu }) => {
       onClick={() => setTimeout(() => setMenuIsOpen(false), 100)}
       className={`${
         currentHash === hash ? "" : ""
-      } relative text-xl inline-block`}
+      } relative text-3xl lg:text-xl inline-block`}
     >
       {currentHash === hash ? (
         <motion.div
@@ -26,7 +26,7 @@ export const NavbarLink = ({ link }: { link: TypeLinkMenu }) => {
           className="absolute w-full h-full border-b-2"
         ></motion.div>
       ) : null}
-      {name}
+      <span className="text-slate-800 lg:text-white">{name}</span>
     </Link>
   );
 };
