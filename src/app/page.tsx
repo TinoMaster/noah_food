@@ -2,10 +2,7 @@ import { img_parrilla } from "@/utils/images";
 import { Banner_Image } from "@/components/Z-Banner_Image/Banner_Image";
 import { Wy_US } from "@/components/home/wy_us";
 import { AboutUs } from "@/components/home/About_us";
-import Image from "next/image";
-import papelSVG from "../../public/papel_roto.svg";
-import papelSVGRev from "../../public/papel_roto_rev.svg";
-import { PreferMenus } from "@/components/home/Prefer_menus";
+import { SectionMenus } from "@/components/home/Section Menus";
 
 const tittle = "Gusto Autentico Italiano";
 const bigTittle = "Sembra Casa, Sapore di Paradiso";
@@ -27,7 +24,7 @@ export default function Home() {
       <main className="h-[1000px]">
         {/* La nostra Storia */}
         <AboutUs />
-        <PreferMenus />
+        <SectionMenus />
       </main>
     </>
   );

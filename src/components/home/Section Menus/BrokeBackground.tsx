@@ -7,7 +7,7 @@ export const BrokeBackground = () => {
   return (
     <>
       {/* Up */}
-      <div className="w-full flex overflow-hidden absolute -top-5 lg:-top-4 xl:-top-5 2xl:-top-7">
+      <div className="w-full flex overflow-hidden absolute sm:-top-5 -top-4 lg:-top-4 xl:-top-5 2xl:-top-7">
         <Image
           src={papelSVG}
           alt="prueba"
