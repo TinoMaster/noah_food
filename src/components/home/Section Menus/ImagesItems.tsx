@@ -17,12 +17,12 @@ export const ImagesItems = () => {
     <motion.div
       ref={carousel}
       whileTap={{ cursor: "grabbing" }}
-      className="overflow-hidden relative lg:p-5 rounded-md"
+      className="overflow-hidden relative py-3 rounded-md"
     >
       <motion.div
         drag="x"
         dragConstraints={{ right: 0, left: -width }}
-        className="flex w-max py-3 lg:py-10 gap-2 cursor-grab"
+        className="flex w-max gap-2 cursor-grab"
       >
         {/* Piatto */}
         <Item_Prefer />
