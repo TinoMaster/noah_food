@@ -50,3 +50,22 @@ export const image2historyHome = {
     x: 0,
   },
 };
+
+export const containerImagesPrefers = {
+  hidden: { y: "100px" },
+  show: {
+    y: 0,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+export const itemImagePrefer = {
+  hidden: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+  },
+};

@@ -17,7 +17,7 @@ export const ImagesItems = () => {
     <motion.div
       ref={carousel}
       whileTap={{ cursor: "grabbing" }}
-      className="overflow-hidden relative py-3 rounded-md"
+      className="overflow-hidden container relative py-3 rounded-md"
     >
       <motion.div
         drag="x"

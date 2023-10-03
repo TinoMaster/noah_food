@@ -5,9 +5,9 @@ import { Categories } from "./Categories";
 
 export const SectionMenus = () => {
   return (
-    <section className="w-full bg-gradient-to-b from-white via-orange-50 to-white text-slate-800 relative my-20">
+    <section className="w-full z-10 bg-gradient-to-b from-primary via-primary/20 to-primary text-slate-100 mt-10 relative">
       <BrokeBackground />
-      <h2 className="container text-2xl text-secondary italic saturate-200 text-center lg:text-4xl lg:py-4">
+      <h2 className="container text-2xl text-secondary italic text-center lg:text-4xl lg:py-4">
         Menu
       </h2>
       <Categories />
